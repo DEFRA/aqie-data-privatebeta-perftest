@@ -21,6 +21,9 @@ LOGFILE=${JM_LOGS}/perftest-${TEST_SCENARIO}.log
 # Run the test suite
 jmeter -n -t ${SCENARIOFILE} -e -l "${REPORTFILE}" -o ${JM_REPORTS} -j ${LOGFILE} -f -Jenv="${ENVIRONMENT}"
 test_exit_code=$?
+echo "test suite finished" 
+ls -la "$JM_REPORTS" 
+ls -la "$REPORTFILE"
 
 # Publish the results into S3 so they can be displayed in the CDP Portal
 if [ -n "$RESULTS_OUTPUT_S3_PATH" ]; then
