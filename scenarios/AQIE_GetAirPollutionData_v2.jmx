@@ -87,13 +87,13 @@
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
         <intProp name="ThreadGroup.num_threads">3</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
-        <longProp name="ThreadGroup.duration">360</longProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
         <longProp name="ThreadGroup.delay">0</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">35</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
@@ -1174,13 +1174,13 @@
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
         <intProp name="ThreadGroup.num_threads">4</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
-        <longProp name="ThreadGroup.duration">360</longProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
         <longProp name="ThreadGroup.delay">30</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">27</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
@@ -2429,13 +2429,13 @@
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
         <intProp name="ThreadGroup.num_threads">5</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
-        <longProp name="ThreadGroup.duration">360</longProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
         <longProp name="ThreadGroup.delay">60</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">22</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
