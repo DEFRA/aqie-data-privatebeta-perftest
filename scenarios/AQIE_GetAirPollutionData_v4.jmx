@@ -7,6 +7,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
@@ -60,7 +61,7 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
         <collectionProp name="DNSCacheManager.servers"/>
         <collectionProp name="DNSCacheManager.hosts"/>
         <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
@@ -72,20 +73,20 @@
         <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
       </AuthManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
-        <intProp name="ThreadGroup.num_threads">110</intProp>
+        <intProp name="ThreadGroup.num_threads">30</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -97,7 +98,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="filename">Postcode_UI.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -139,7 +140,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
@@ -257,7 +258,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://aqie-dataselector-perf-frontend.dev.cdp-int.defra.cloud/stationdetails/LondonHonorOakPark">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://aqie-dataselector-perf-frontend.dev.cdp-int.defra.cloud/stationdetails/LondonHonorOakPark" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -271,7 +272,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1553028341">${StationName}</stringProp>
               </collectionProp>
@@ -287,7 +288,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T05_DownloadHourlyData_AllPollutants">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T05_DownloadHourlyData_AllPollutants" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -377,7 +378,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -441,7 +442,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -458,7 +459,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T06_DownloadDailyData_AllPollutants">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T06_DownloadDailyData_AllPollutants" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -548,7 +549,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -612,7 +613,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -693,7 +694,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T07_DownloadHourlyData_PM2.5">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2025_T07_DownloadHourlyData_PM2.5" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -783,7 +784,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -847,7 +848,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -1023,7 +1024,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1087,7 +1088,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -1171,7 +1172,7 @@
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
-        <intProp name="ThreadGroup.num_threads">110</intProp>
+        <intProp name="ThreadGroup.num_threads">30</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -1213,7 +1214,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-532204480"> Get air pollution data</stringProp>
               </collectionProp>
@@ -1467,7 +1468,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_LBS_DownloadData2024_T07_DownloadHourlyData_AllPollutants">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_LBS_DownloadData2024_T07_DownloadHourlyData_AllPollutants" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1557,7 +1558,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1621,7 +1622,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -1861,7 +1862,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -2101,7 +2102,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -2341,7 +2342,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -2425,7 +2426,7 @@
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
-        <intProp name="ThreadGroup.num_threads">110</intProp>
+        <intProp name="ThreadGroup.num_threads">30</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -2662,7 +2663,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T06_DownloadHourlyData_PM10">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T06_DownloadHourlyData_PM10" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -2752,7 +2753,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2816,7 +2817,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -2833,7 +2834,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T07_DownloadDailyData_PM10">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T07_DownloadDailyData_PM10" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -2987,7 +2988,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -3068,7 +3069,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T08_DownloadHourlyData_Ozone">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T08_DownloadHourlyData_Ozone" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -3222,7 +3223,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -3308,7 +3309,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T09_DownloadDailyData_Ozone">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T09_DownloadDailyData_Ozone" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -3462,7 +3463,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -3544,11 +3545,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T10_DownloadHourlyData_SulphurDioxide">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T10_DownloadHourlyData_SulphurDioxide" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -3702,7 +3703,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1858687877">Hourly data from Defra</stringProp>
               </collectionProp>
@@ -3788,7 +3789,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T11_DownloadDailyData_SulphurDioxide">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AQIE_PBS_DownloadData2023_T11_DownloadDailyData_SulphurDioxide" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -3878,7 +3879,7 @@
             </BoundaryExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download Data" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3942,7 +3943,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="668560109">Daily data from Defra</stringProp>
               </collectionProp>
@@ -4026,7 +4027,7 @@
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
-        <intProp name="ThreadGroup.num_threads">220</intProp>
+        <intProp name="ThreadGroup.num_threads">60</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
@@ -5112,8 +5113,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024" enabled="true">
-        <intProp name="ThreadGroup.num_threads">220</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
+        <intProp name="ThreadGroup.num_threads">60</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
@@ -6368,7 +6369,7 @@
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
-        <intProp name="ThreadGroup.num_threads">220</intProp>
+        <intProp name="ThreadGroup.num_threads">60</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
@@ -7969,8 +7970,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025" enabled="true">
-        <intProp name="ThreadGroup.num_threads">330</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
+        <intProp name="ThreadGroup.num_threads">90</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
@@ -9056,8 +9057,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024" enabled="true">
-        <intProp name="ThreadGroup.num_threads">330</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
+        <intProp name="ThreadGroup.num_threads">90</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
@@ -10311,8 +10312,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023" enabled="true">
-        <intProp name="ThreadGroup.num_threads">330</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
+        <intProp name="ThreadGroup.num_threads">90</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
@@ -11913,8 +11914,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025" enabled="true">
-        <intProp name="ThreadGroup.num_threads">440</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
+        <intProp name="ThreadGroup.num_threads">120</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
@@ -13000,8 +13001,8 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024" enabled="true">
-        <intProp name="ThreadGroup.num_threads">440</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
+        <intProp name="ThreadGroup.num_threads">120</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
@@ -14256,7 +14257,7 @@
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
-        <intProp name="ThreadGroup.num_threads">440</intProp>
+        <intProp name="ThreadGroup.num_threads">120</intProp>
         <intProp name="ThreadGroup.ramp_time">110</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
