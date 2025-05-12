@@ -87,7 +87,7 @@
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
         <intProp name="ThreadGroup.num_threads">30</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">30</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
@@ -1173,7 +1173,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
         <intProp name="ThreadGroup.num_threads">30</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">30</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
@@ -2427,7 +2427,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
         <intProp name="ThreadGroup.num_threads">30</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">30</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
@@ -4028,7 +4028,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
         <intProp name="ThreadGroup.num_threads">60</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">60</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -5115,7 +5115,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
         <intProp name="ThreadGroup.num_threads">60</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">60</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -6370,7 +6370,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
         <intProp name="ThreadGroup.num_threads">60</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">60</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">899</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -7972,7 +7972,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
         <intProp name="ThreadGroup.num_threads">90</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">90</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -9059,7 +9059,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
         <intProp name="ThreadGroup.num_threads">90</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">90</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -10314,7 +10314,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
         <intProp name="ThreadGroup.num_threads">90</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">90</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">1798</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -11916,7 +11916,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
         <intProp name="ThreadGroup.num_threads">120</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">120</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -13003,7 +13003,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_LBS_Downloaddata_2024">
         <intProp name="ThreadGroup.num_threads">120</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">120</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -14258,7 +14258,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2023">
         <intProp name="ThreadGroup.num_threads">120</intProp>
-        <intProp name="ThreadGroup.ramp_time">110</intProp>
+        <intProp name="ThreadGroup.ramp_time">120</intProp>
         <longProp name="ThreadGroup.duration">900</longProp>
         <longProp name="ThreadGroup.delay">2694</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
