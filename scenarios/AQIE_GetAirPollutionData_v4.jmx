@@ -85,8 +85,8 @@
       </CacheManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AQIE_PBS_Downloaddata_2025">
-        <intProp name="ThreadGroup.num_threads">440</intProp>
-        <intProp name="ThreadGroup.ramp_time">880</intProp>
+        <intProp name="ThreadGroup.num_threads">510</intProp>
+        <intProp name="ThreadGroup.ramp_time">1020</intProp>
         <longProp name="ThreadGroup.duration">3600</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
